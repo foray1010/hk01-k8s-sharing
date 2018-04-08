@@ -5,6 +5,8 @@
 # https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
 #
 
+published: false
+
 #
 # Theme setting options:
 # black, moon, night, beige, sky, white, simple
@@ -24,8 +26,8 @@ layout : center-right
 transition : slide
 
 logo : assets/images/logo.png
+slide-number : true
 theme-override : assets/css/PITCHME.css
-footnote : "Your custom footnote goes here."
 
 #
 # Additional sample quickstart setting options:
