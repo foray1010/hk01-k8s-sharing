@@ -16,7 +16,7 @@
 
 .reveal pre {
   width: 100%;
-  box-shadow : none;
+  box-shadow: none;
 }
 
 .reveal pre code {
@@ -25,4 +25,3 @@
   max-height: 55vh !important;
   border-radius: 10px;
 }
-

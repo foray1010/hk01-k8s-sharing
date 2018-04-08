@@ -5,10 +5,14 @@
   "license": "MIT",
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "lint": "eslint .",
+    "lint": "npm-run-all -p lint:*",
+    "lint:css": "stylelint assets/**/*.css",
+    "lint:md": "markdownlint *.md",
+    "lint:js": "eslint .",
     "precommit": "lint-staged"
   },
   "lint-staged": {
+    "*.css": ["prettier-eslint --write", "stylelint --fix", "git add"],
     "*.js": ["prettier-eslint --write", "eslint --fix", "git add"],
     "*.json": ["prettier-eslint --write", "git add"],
     "*.md": ["markdownlint"],
@@ -23,6 +27,9 @@
     "ignore-sync": "^1.1.0",
     "lint-staged": "^7.0.4",
     "markdownlint-cli": "^0.8.1",
-    "prettier-eslint-cli": "^4.7.1"
+    "npm-run-all": "^4.1.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "stylelint": "^9.2.0",
+    "stylelint-config-foray1010": "^4.0.1"
   }
 }
