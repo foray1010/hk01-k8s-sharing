@@ -1,0 +1,28 @@
+{
+  "name": "hk01-k8s-sharing",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "lint": "eslint .",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["prettier-eslint --write", "eslint --fix", "git add"],
+    "*.json": ["prettier-eslint --write", "git add"],
+    "*.md": ["markdownlint"],
+    "*ignore-sync": ["ignore-sync", "git add"]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "eslint": "^4.19.1",
+    "eslint-config-foray1010": "^6.11.0",
+    "husky": "^0.14.3",
+    "ignore-sync": "^1.1.0",
+    "lint-staged": "^7.0.4",
+    "markdownlint-cli": "^0.8.1",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
