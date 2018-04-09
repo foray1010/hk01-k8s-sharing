@@ -1,4 +1,4 @@
----?image=assets/images/ship-wheel.jpg&opacity=80
+---?image=assets/images/ship-wheel.jpg&opacity=80&size=crop
 
 @title[Let's Get Started]
 
@@ -8,7 +8,7 @@
 
 ##### alexyeung@hk01
 
----?color=#D4C711
+---?color=#d4c711
 
 @title[Your Big Ideas]
 
@@ -26,7 +26,7 @@
 
 @fa[heart fa-4x]
 
-### Git@css[gold](Pitch)
+### Git@color[#e49436](Pitch)
 
 ### Desktop
 
@@ -34,4 +34,4 @@
 
 # Now It's Your Turn
 
-#### Start updating the auto-generated @color[#BA11D4](PITCHME.md) in your repo
+#### Start updating the auto-generated @color[#ba11d4](PITCHME.md) in your repo
