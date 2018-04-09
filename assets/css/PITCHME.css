@@ -10,6 +10,14 @@
   max-width: none;
 }
 
+.reveal h5 {
+  font-size: 0.7em;
+}
+
+.reveal h6 {
+  font-size: 0.4em;
+}
+
 .reveal pre {
   width: 100%;
   box-shadow: none;
