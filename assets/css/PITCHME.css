@@ -25,3 +25,15 @@
   max-height: 55vh !important;
   border-radius: 10px;
 }
+
+.reveal .slide-number {
+  color: #fff !important;
+}
+
+#title-footer {
+  background: transparent;
+}
+
+#title-footer #notification {
+  color: #fff;
+}

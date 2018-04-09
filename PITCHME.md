@@ -1,12 +1,12 @@
----?image=assets/images/sunrise.jpg&opacity=80
+---?image=assets/images/ship-wheel.jpg&opacity=80
 
 @title[Let's Get Started]
 
-# Let's
+### Introduction to
 
-# Get
+# Kubernetes
 
-# Started
+##### alexyeung@hk01
 
 ---?color=#D4C711
 
