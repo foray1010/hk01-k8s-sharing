@@ -8,17 +8,28 @@
 
 ###### alexyeung@hk01
 
----?color=#d4c711
+---?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&color=#fff&size=auto 90%
 
-@title[Your Big Ideas]
+@title[Why Container?]
 
-## YOUR
+Note:
 
-# @size[1.75em](BIG)
+### Old way
 
-## IDEAS
+1. depends on OS package manager, all dependencies and their config are coupled
 
----?image=assets/images/sunset.jpg&color=black&position=center left&size=60% 100%
+    - ex: like you won't share your node_modules for all projects right?
+    - what if different node version is needed?
+
+### New way
+
+1. each containers are isolated from each other and the host, and having their own config, such as node version, timezone
+
+1. portable
+
+    - combinations can be infinite
+
+---?image=assets/images/sunset.jpg&color=#000&position=center left&size=60% 100%
 
 @title[Will &hearts; GitPitch Desktop]
 

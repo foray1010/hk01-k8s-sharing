@@ -2,5 +2,6 @@
   "first-header-h1": false,
   "first-line-h1": false,
   "header-increment": false,
-  "line-length": false
+  "line-length": false,
+  "no-bare-urls": false
 }
