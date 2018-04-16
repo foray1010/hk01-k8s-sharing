@@ -14,6 +14,8 @@
 
 Note:
 
+In context of decoupling deployed app
+
 ### Old way
 
 1. depends on OS package manager, all dependencies and their config are coupled
@@ -29,3 +31,9 @@ Note:
 
     - easier to scale horizontally
     - combinations can be infinite
+
+---
+
+@title[The End]
+
+# Questions?
