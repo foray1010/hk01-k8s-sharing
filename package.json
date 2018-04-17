@@ -6,7 +6,7 @@
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "npm-run-all -p lint:*",
-    "lint:css": "stylelint assets/**/*.css",
+    "lint:css": "stylelint 'assets/**/*.css'",
     "lint:md": "markdownlint *.md",
     "lint:js": "eslint .",
     "precommit": "lint-staged"
