@@ -8,7 +8,7 @@
 
 ###### alexyeung@hk01
 
----?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&color=#fff&size=auto 90%
+---?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&size=auto 90%&color=#fff
 
 @title[Why Container?]
 
@@ -31,6 +31,10 @@ In context of decoupling deployed app
 
     - easier to scale horizontally
     - combinations can be infinite
+
+---?image=assets/images/k8s-flow.png&size=contain&color=#fff
+
+@title[Kubernetes CI/CD flow]
 
 ---
 
