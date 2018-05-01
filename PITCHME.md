@@ -32,9 +32,13 @@ In context of decoupling deployed app
     - easier to scale horizontally
     - combinations can be infinite
 
+---?image=assets/images/k8s-high-level-component-architecture.jpg&size=contain&color=#fff
+
+@title[Kubernetes Architecture]
+
 ---?image=assets/images/k8s-flow.png&size=contain&color=#fff
 
-@title[Kubernetes CI/CD flow]
+@title[Kubernetes CI/CD Flow]
 
 ---
 
