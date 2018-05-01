@@ -32,6 +32,10 @@ In context of decoupling deployed app
     - easier to scale horizontally
     - combinations can be infinite
 
+---?image=assets/images/microservices-concerns.jpg&size=contain&color=#fff
+
+@title[Microservices Concerns]
+
 ---?image=assets/images/k8s-high-level-component-architecture.jpg&size=contain&color=#fff
 
 @title[Kubernetes Architecture]
