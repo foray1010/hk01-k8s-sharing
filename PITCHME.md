@@ -40,11 +40,9 @@ In context of decoupling deployed app
 
 @title[Kubernetes Architecture]
 
----
+---?image=assets/images/grid-cats.jpg&size=crop
 
 @title[Analogy of multiple pods with different resource limit]
-
-<iframe class="stretch" data-src="https://www.google.com/search?q=cat&tbm=isch"></iframe>
 
 ---?image=assets/images/k8s-flow.jpg&size=contain
 
