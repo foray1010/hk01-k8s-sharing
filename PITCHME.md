@@ -46,7 +46,7 @@ In context of decoupling deployed app
 
 <iframe class="stretch" data-src="https://www.google.com/search?q=cat&tbm=isch"></iframe>
 
----?image=assets/images/k8s-flow.png&size=contain
+---?image=assets/images/k8s-flow.jpg&size=contain
 
 @title[Kubernetes CI/CD Flow]
 
