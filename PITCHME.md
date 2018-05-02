@@ -44,6 +44,12 @@ In context of decoupling deployed app
 
 @title[Analogy of multiple pods with different resource limit]
 
+# @css[text-stroke](Bin Packing problem)
+
+Note:
+
+pack as many pods onto as a few nodes as possible
+
 ---?image=assets/images/k8s-flow.jpg&size=contain
 
 @title[Kubernetes CI/CD Flow]
