@@ -1,4 +1,4 @@
----?image=assets/images/ship-wheel.jpg&opacity=80&size=crop
+---?image=assets/images/k8s-frontpage.jpg&size=crop
 
 @title[Let's Get Started]
 
