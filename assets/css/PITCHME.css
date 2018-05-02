@@ -40,7 +40,11 @@
 }
 
 .reveal .slide-number {
-  color: #fff !important;
+  color: #333 !important;
+}
+
+.text-stroke {
+  -webkit-text-stroke: #fff 1px;
 }
 
 #title-footer {
@@ -48,5 +52,5 @@
 }
 
 #title-footer #notification {
-  color: #fff !important;
+  color: #333 !important;
 }

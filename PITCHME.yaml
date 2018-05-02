@@ -10,6 +10,6 @@ layout: center-right
 logo: assets/images/logo.png
 published: false
 slide-number: true
-theme: black
+theme: white
 theme-override: assets/css/PITCHME.css
 transition: slide

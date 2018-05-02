@@ -4,11 +4,11 @@
 
 ### Introduction to
 
-# Kubernetes
+# @css[text-stroke](Kubernetes)
 
 ###### alexyeung@hk01
 
----?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&size=auto 90%&color=#fff
+---?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&size=auto 90%
 
 @title[Why Container?]
 
@@ -32,11 +32,11 @@ In context of decoupling deployed app
     - easier to scale horizontally
     - combinations can be infinite
 
----?image=assets/images/microservices-concerns.jpg&size=contain&color=#fff
+---?image=assets/images/microservices-concerns.jpg&size=contain
 
 @title[Microservices Concerns]
 
----?image=assets/images/k8s-high-level-component-architecture.jpg&size=contain&color=#fff
+---?image=assets/images/k8s-high-level-component-architecture.jpg&size=contain
 
 @title[Kubernetes Architecture]
 
@@ -46,7 +46,7 @@ In context of decoupling deployed app
 
 <iframe class="stretch" data-src="https://www.google.com/search?q=cat&tbm=isch"></iframe>
 
----?image=assets/images/k8s-flow.png&size=contain&color=#fff
+---?image=assets/images/k8s-flow.png&size=contain
 
 @title[Kubernetes CI/CD Flow]
 
