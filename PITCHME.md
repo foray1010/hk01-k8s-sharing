@@ -36,9 +36,17 @@ In context of decoupling deployed app
 
 @title[Microservices Concerns]
 
----?image=assets/images/k8s-high-level-component-architecture.jpg&size=contain
+---?image=assets/images/k8s-overview-architecture.png&size=contain
 
-@title[Kubernetes Architecture]
+@title[Kubernetes Overview Architecture]
+
+---?image=assets/images/k8s-master-architecture.png&size=contain
+
+@title[Kubernetes Master Architecture]
+
+---?image=assets/images/k8s-node-architecture.png&size=contain
+
+@title[Kubernetes Node Architecture]
 
 ---?image=assets/images/grid-cats.jpg&size=crop
 
