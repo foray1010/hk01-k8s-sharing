@@ -64,6 +64,28 @@ pack as many pods onto as a few nodes as possible
 
 ---
 
+@title[References]
+
+## References
+
+- <https://kubernetes.io/docs/concepts>
+
+- <https://jimmysong.io/kubernetes-handbook>
+
+- <https://thenewstack.io/kubernetes-an-overview>
+
+---
+
+@title[Tutorials]
+
+## Tutorials
+
+- <https://github.com/aws-samples/aws-workshop-for-kubernetes>
+
+- <https://kubernetes.io/docs/tutorials>
+
+---
+
 @title[The End]
 
 # Questions?
