@@ -48,7 +48,7 @@ In context of decoupling deployed app
 
 @title[Kubernetes Node Architecture]
 
----?image=assets/images/grid-cats.jpg&size=crop
++++?image=assets/images/grid-cats.jpg&size=crop
 
 @title[Analogy of multiple pods with different resource limit]
 
