@@ -36,15 +36,15 @@ In context of decoupling deployed app
 
 @title[Microservices Concerns]
 
----?image=assets/images/k8s-overview-architecture.png&size=contain
+---?image=assets/images/k8s-overview-architecture.png&size=contain&color=#E4EBF2
 
 @title[Kubernetes Overview Architecture]
 
----?image=assets/images/k8s-master-architecture.png&size=contain
+---?image=assets/images/k8s-master-architecture.png&size=contain&color=#E4EBF2
 
 @title[Kubernetes Master Architecture]
 
----?image=assets/images/k8s-node-architecture.png&size=contain
+---?image=assets/images/k8s-node-architecture.png&size=contain&color=#E4EBF2
 
 @title[Kubernetes Node Architecture]
 
