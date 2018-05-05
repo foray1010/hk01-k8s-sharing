@@ -43,6 +43,18 @@
   color: #333 !important;
 }
 
+.position-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+.position-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+}
+
 .text-stroke {
   -webkit-text-stroke: #fff 1px;
 }

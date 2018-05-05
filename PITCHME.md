@@ -86,6 +86,38 @@ pack as many pods onto as a few nodes as possible
 
 ---
 
+@title[Bonus]
+
+# Bonus
+
++++
+
+@title[waifu2x]
+
+# waifu2x
+
+### Image Super-Resolution using Deep Convolutional Neural Networks
+
++++?image=assets/images/cat-upscale-compare.jpg&size=contain
+
+#### @css[position-bottom-left](Original)
+
+#### @css[position-bottom-right](Upscaled)
+
++++
+
+@title[waifu2x Source & Live Demo]
+
+### Source Code
+
+- <https://github.com/nagadomi/waifu2x>
+
+### Live Demo
+
+- <https://bigjpg.com/>
+
+---
+
 @title[The End]
 
 # Questions?
