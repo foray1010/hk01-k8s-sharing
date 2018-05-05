@@ -84,11 +84,11 @@ pack as many pods onto as a few nodes as possible
 
 - <https://kubernetes.io/docs/tutorials>
 
----
+---?color=yellow
 
 @title[Bonus]
 
-# Bonus
+# @color[dodgerblue](*Bonus*)
 
 +++
 
@@ -100,9 +100,9 @@ pack as many pods onto as a few nodes as possible
 
 +++?image=assets/images/cat-upscale-compare.jpg&size=contain
 
-#### @css[position-bottom-left](Original)
+### @css[position-bottom-left text-stroke](Original)
 
-#### @css[position-bottom-right](Upscaled)
+### @css[position-bottom-right text-stroke](Upscaled)
 
 +++
 
@@ -111,6 +111,8 @@ pack as many pods onto as a few nodes as possible
 ### Source Code
 
 - <https://github.com/nagadomi/waifu2x>
+
+<br />
 
 ### Live Demo
 
