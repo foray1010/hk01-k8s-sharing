@@ -8,9 +8,15 @@
 
 ###### alexyeung@hk01
 
----?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&size=auto 90%
+---
 
 @title[Why Container?]
+
+# Why Container?
+
+---?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&size=auto 90%
+
+@title[Compare VM With Container]
 
 Note:
 
@@ -31,10 +37,6 @@ In context of decoupling deployed app
 
     - easier to scale horizontally
     - combinations can be infinite
-
----?image=assets/images/microservices-concerns.jpg&size=contain
-
-@title[Microservices Concerns]
 
 ---?image=assets/images/k8s-overview-architecture.png&size=contain&color=#E4EBF2
 
