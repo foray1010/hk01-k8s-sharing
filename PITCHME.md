@@ -60,7 +60,7 @@ In context of decoupling deployed app
 
 @title[Analogy of multiple pods with different resource limit]
 
-# @css[text-stroke](Bin Packing problem)
+# @css[text-stroke](Bin Packing Problem)
 
 Note:
 
