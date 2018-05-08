@@ -8,11 +8,11 @@
 
 ###### alexyeung@hk01
 
----
+---?color=dodgerblue
 
 @title[Why Container?]
 
-# Why Container?
+# @color[#fff](Why Container?)
 
 ---?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&size=auto 90%
 
@@ -38,11 +38,11 @@ In context of decoupling deployed app
     - easier to scale horizontally
     - combinations can be infinite
 
----
+---?color=dodgerblue
 
 @title[Why Kubernetes?]
 
-# Why Kubernetes?
+# @color[#fff](Why Kubernetes?)
 
 ---?image=assets/images/k8s-overview-architecture.png&size=contain&color=#E4EBF2
 
@@ -126,8 +126,8 @@ pack as many pods onto as a few nodes as possible
 
 - <https://bigjpg.com/>
 
----
+---?color=dodgerblue
 
 @title[The End]
 
-# Questions?
+# @color[#fff](Questions?)
