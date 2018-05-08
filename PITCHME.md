@@ -38,6 +38,12 @@ In context of decoupling deployed app
     - easier to scale horizontally
     - combinations can be infinite
 
+---
+
+@title[Why Kubernetes?]
+
+# Why Kubernetes?
+
 ---?image=assets/images/k8s-overview-architecture.png&size=contain&color=#E4EBF2
 
 @title[Kubernetes Overview Architecture]
