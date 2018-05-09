@@ -4,6 +4,10 @@
   "header-increment": false,
   "line-length": false,
   "no-bare-urls": false,
+  "no-duplicate-header": false,
   "no-inline-html": false,
-  "no-trailing-punctuation": false
+  "no-trailing-punctuation": false,
+  "ul-indent": {
+    "indent": 4
+  }
 }
