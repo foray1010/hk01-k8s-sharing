@@ -182,9 +182,9 @@ spec:
 @[16](number of CPU core, such as "1" or "0.1")
 @[15](amount of Memory, such as "512Mi")
 @[10, 11](Limits: maximum resource can be used)
-@[1-9](if not all limit and request are defined, QoS class = "BestEffort")
-@[11-12, 14-15](if any limit > request, QoS class = "Burstable")
-@[11-16](if all limits and requests are the same, QoS class = "Guaranteed")
+<!-- @[1-9](if not all limit and request are defined, QoS class = "BestEffort") -->
+<!-- @[11-12, 14-15](if any limit > request, QoS class = "Burstable") -->
+<!-- @[11-16](if all limits and requests are the same, QoS class = "Guaranteed") -->
 
 <br />
 
