@@ -70,6 +70,51 @@ Note:
 - consist of Master Nodes and Worker Nodes
     - master/slave architecture
 
++++
+
+@title[Kubernetes Object]
+
+### Kubernetes Object
+
+```yaml
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: demo-deployment
+spec:
+  selector:
+    matchLabels:
+      app: demo
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+        -
+          name: demo
+          image: gcr.io/project-id/demo:latest
+```
+
+@[1]
+@[15, 18]
+@[9]
+
+Note:
+
+- you can feed a config to master, and master will ensure worker nodes follow your instruction
+- it is infrastructure independenced
+    1. write once run everywhere
+    1. why?
+        - no vender lock
+            - you never sure if this cloud provider provides all services you need
+            - e.g. you may want to deploy to alicloud if you start business in china
+            - e.g. overcharge, google app engine happened once, see
+                - <https://startupsventurecapital.com/firebase-costs-increased-by-7-000-81dc0a27271d>
+                - <https://hackernoon.com/why-and-how-we-left-app-engine-after-it-almost-destroyed-us-40ac2fc0b1a8>
+        - lower devops learning curve
+
 ---?image=assets/images/k8s-master-architecture.png&size=contain&color=#e4ebf2
 
 @title[Kubernetes Master Architecture]
