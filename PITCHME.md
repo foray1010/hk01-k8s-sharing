@@ -214,10 +214,6 @@ Note:
 
 @title[Kubernetes Cluster Overview]
 
----?image=assets/images/k8s-flow.jpg&size=contain
-
-@title[Kubernetes CI/CD Flow]
-
 ---?color=dodgerblue
 
 @title[Reasons to use Kubernetes]
@@ -301,6 +297,10 @@ Note:
 @title[Appendix]
 
 # Appendix
+
++++?image=assets/images/k8s-flow.jpg&size=contain
+
+@title[Kubernetes CI/CD Flow]
 
 +++
 
