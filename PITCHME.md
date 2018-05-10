@@ -196,11 +196,18 @@ Note:
 
 - pack as much as small boxes in a fixed number and capacity of bin
     - each bin has different width, height and depth
+    - in k8s, it is cpu and memory limit
 - k8s helps pack as many pods onto as a few nodes as possible
 
 +++?image=assets/images/k8s-cluster-overview.jpg&size=contain
 
 @title[Kubernetes Cluster Overview]
+
+Note:
+
+- can take more metrics
+    - Pod anti-affinity (beta) to try avoid deploying same pod in same node, to ensure HA
+- for example, if set Pod 2 to have 3 replica sets, it will be deployed to Node 2
 
 ---?image=assets/images/k8s-node-architecture.png&size=contain&color=#e4ebf2
 
@@ -214,14 +221,11 @@ Note:
 
 @title[Centralized Logging]
 
-+++?image=assets/images/k8s-node-desc.jpg&size=contain
++++?image=assets/images/service-discovery.jpg&size=crop
 
-@title[Kubernetes Node Description]
+@title[Service Discovery]
 
-Note:
-
-- kubelet
-- kube-proxy
+# @css[text-stroke](Service Discovery)
 
 ---?color=dodgerblue
 
@@ -246,7 +250,15 @@ Note:
 - <https://thenewstack.io/kubernetes-an-overview>
 - <https://docs.openshift.com/container-platform/3.7/dev_guide/compute_resources.html>
 - <http://www.informaticslab.co.uk/technical/infrastructure/2016/03/30/kubernetes-in-pics.html>
+
++++
+
+@title[References Part 2]
+
+## References Part 2
+
 - <https://blog.treasuredata.com/blog/2016/06/14/fluentd-kubernetes-and-google-cloud-platform-a-few-recipes-for-streaming-logging>
+- <https://stackoverflow.com/questions/45945011/on-gke-how-to-evenly-distribute-pod-replica-on-nodes>
 
 ---
 
