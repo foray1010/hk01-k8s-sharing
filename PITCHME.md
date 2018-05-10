@@ -279,6 +279,7 @@ Note:
 
 - <https://blog.treasuredata.com/blog/2016/06/14/fluentd-kubernetes-and-google-cloud-platform-a-few-recipes-for-streaming-logging>
 - <https://stackoverflow.com/questions/45945011/on-gke-how-to-evenly-distribute-pod-replica-on-nodes>
+- <https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture>
 
 ---
 
