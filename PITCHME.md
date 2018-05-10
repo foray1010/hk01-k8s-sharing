@@ -74,14 +74,21 @@ Note:
 
 @title[Kubernetes Master Architecture]
 
++++?image=assets/images/k8s-master-desc.jpg&size=contain
+
+@title[Kubernetes Master Description]
+
 Note:
 
-- api server: backend for api
-- etcd: data storage for k8s internal use
-- scheduler: decide which node should the containers (pods) be deployed to
-- controller:
+- api server
+    - interface to start/stop pods, can call via api, ui and cli
+- etcd
+    - which pod is deployed and on which nodes
+- scheduler
+    - decide which node should the pod be deployed to
+- controller manager
+    - make sure pod are running in desired number of replication
     - detect down node and take action (failover)
-    - maintain correct number of replication
 - k8s 1.6+: cloud-controller-manager
     - integrate with cloud provider like aws, gcp
     - e.g. config load balanacer for Service
@@ -94,6 +101,13 @@ Note:
 
 - pod
     - explain what is pod
+
++++?image=assets/images/k8s-node-desc.jpg&size=contain
+
+@title[Kubernetes Node Description]
+
+Note:
+
 - kubelet
 - kube-proxy
 - fluentd
