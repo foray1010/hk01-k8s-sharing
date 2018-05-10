@@ -165,6 +165,10 @@ Note:
     - each bin has different width, height and depth
 - k8s helps pack as many pods onto as a few nodes as possible
 
++++?image=assets/images/k8s-cluster-overview.jpg&size=contain
+
+@title[Kubernetes Cluster Overview]
+
 ---?image=assets/images/k8s-flow.jpg&size=contain
 
 @title[Kubernetes CI/CD Flow]
@@ -194,6 +198,8 @@ Note:
 - <https://thenewstack.io/kubernetes-an-overview>
 
 - <https://docs.openshift.com/container-platform/3.7/dev_guide/compute_resources.html>
+
+- <http://www.informaticslab.co.uk/technical/infrastructure/2016/03/30/kubernetes-in-pics.html>
 
 ---
 
