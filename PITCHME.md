@@ -11,13 +11,17 @@
 Note:
 
 - sharing of basic learning from aws kubernetes workshop
-- introduction level
+- focus on why use k8s and what is its advantage
 
 ---?color=dodgerblue
 
 @title[Why Container?]
 
 # @color[#fff](Why Container?)
+
+Note:
+
+- k8s is based on container
 
 ---?image=https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg&size=auto 90%
 
@@ -27,14 +31,14 @@ Note:
 
 In context of decoupling deployed app
 
-### Old way
+### VM Way
 
 1. depends on OS package manager, all dependencies and their config are coupled
 
-    - ex: like you won't share your node_modules for all projects right?
-    - what if different node version is needed?
-
-1. waste resource when auto scale => not all apps need to scale but they are forced to scale tgt
+    1. what if different node version is needed?
+    1. if upgrade node version
+        1. all apps need to test if broken
+        1. if breaking changes, all apps need to update
 
 1. some will just ship one app in one machine
 
@@ -42,7 +46,7 @@ In context of decoupling deployed app
     - e.g. one time promotion website
     - more machines to maintain
 
-### New way
+### Container Way
 
 1. each containers are isolated from each other and the host, and having their own config, such as node version, timezone
 
@@ -51,7 +55,9 @@ In context of decoupling deployed app
 1. portable
 
     - easier to scale horizontally
-    - combinations can be infinite
+
+1. container is defined by developer
+    - can ensure same environment as development
 
 ---?color=dodgerblue
 
@@ -68,7 +74,9 @@ In context of decoupling deployed app
 Note:
 
 - consist of Master Nodes and Worker Nodes
-    - master/slave architecture
+    - master nodes control worker nodes
+- api
+    - allow engineer to control worker nodes via master nodes
 
 +++
 
@@ -101,17 +109,18 @@ spec:
 
 Note:
 
-- you can feed a config to master, and master will ensure worker nodes follow your instruction
+- you can feed a config to api, and master will ensure worker nodes follow your instruction
+- this spec is asking master to ensure demo container with 3 replicas
 - it is infrastructure independenced
     1. write once run everywhere
+    1. k8s almost abstract all infrastructure for you
     1. why?
-        - no vender lock
+        - easy to migrate, no vender lock
             - you never sure if this cloud provider provides all services you need
             - e.g. you may want to deploy to alicloud if you start business in china
             - e.g. overcharge, google app engine happened once, see
                 - <https://startupsventurecapital.com/firebase-costs-increased-by-7-000-81dc0a27271d>
                 - <https://hackernoon.com/why-and-how-we-left-app-engine-after-it-almost-destroyed-us-40ac2fc0b1a8>
-        - lower devops learning curve
 
 ---?image=assets/images/k8s-master-architecture.png&size=contain&color=#e4ebf2
 
@@ -123,15 +132,17 @@ Note:
 
 Note:
 
-- api server
-    - interface to start/stop pods, can call via api, ui and cli
+- pod
+    - you can think of container first
 - etcd
     - which pod is deployed and on which nodes
-- scheduler
-    - decide which node should the pod be deployed to
+- api server
+    - interface to start/stop pods, can call via api, ui and cli
 - controller manager
     - make sure pod are running in desired number of replication
-    - detect down node and take action (failover)
+    - detect down node and take action (self healing)
+- scheduler
+    - decide which node should the pod be deployed to
 - k8s 1.6+: cloud-controller-manager
     - integrate with cloud provider like aws, gcp
     - e.g. config load balanacer for Service
@@ -142,8 +153,7 @@ Note:
 
 Note:
 
-- pod
-    - explain what is pod
+- pods are in different size
 
 +++
 
@@ -161,7 +171,7 @@ spec:
       image: nginx
       resources:
         limits:
-          memory: "200Mi"
+          memory: "200Mi" # e.g. "300Mi" for Burstable
           cpu: "700m"
         requests:
           memory: "200Mi"
@@ -169,9 +179,9 @@ spec:
 ```
 
 @[10, 14](Requests: minimum resource required)
-@[10, 11](Limits: maximum resource can be used)
 @[16](number of CPU core, such as "1" or "0.1")
 @[15](amount of Memory, such as "512Mi")
+@[10, 11](Limits: maximum resource can be used)
 @[1-9](if not all limit and request are defined, QoS class = "BestEffort")
 @[11-12, 14-15](if any limit > request, QoS class = "Burstable")
 @[11-16](if all limits and requests are the same, QoS class = "Guaranteed")
@@ -205,9 +215,9 @@ Note:
 
 Note:
 
+- for example, if set Pod 2 to have 3 replica sets, it will be deployed to Node 3
 - can take more metrics
-    - Pod anti-affinity (beta) to try avoid deploying same pod in same node, to ensure HA
-- for example, if set Pod 2 to have 3 replica sets, it will be deployed to Node 2
+    - Pod anti-affinity (beta) to try avoid deploying same pod in same node, to ensure HA, and deployed to Node 2
 
 ---?image=assets/images/k8s-node-architecture.png&size=contain&color=#e4ebf2
 
@@ -220,6 +230,13 @@ Note:
 +++?image=assets/images/container-logging.jpg&size=contain&color=#e6f7fe
 
 @title[Centralized Logging]
+
+Note:
+
+- k8s default come up with fluentd to stream all logs to centralized log storage
+- there are multiple pods, it is non sense to check log in each pods manually
+- pod will be killed (not enough resource / redeploy), log will be deleted tgt, same as current vm approach
+- it is used by default in some host kubernetes environment such as GCP kubernetes engine
 
 +++?image=assets/images/service-discovery.jpg&size=crop
 
@@ -258,6 +275,22 @@ Note:
 - @color[#fff](microservices friendly)
 
 - @color[#fff](portable in any cloud environments)
+
+Note:
+
+- containers management
+    - auto assign pod to diff nodes
+    - auto failover (replica)
+    - self healing
+    - centralized logging
+    - resource quota so no single pod can take all resources
+    - *bonus*: it can do auto scaling on pod and nod based on resource usage
+- microservices friendly
+    - service discovery
+- portable in any cloud environments
+    - open source, can run in any infrastructure
+    - abstracted infrastructure level operation
+    - write once run everywhere
 
 ---
 
