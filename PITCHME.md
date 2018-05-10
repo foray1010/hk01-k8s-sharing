@@ -227,6 +227,26 @@ Note:
 
 # @css[text-stroke](Service Discovery)
 
++++?image=assets/images/why-service-discovery.png&size=contain
+
+@title[Why Service Discovery]
+
+Note:
+
+- it is very common in microservice architecture that one service needs to communicate with another
+- it is impossible to use IP address to communicate as IP is dynamic and only point to one instance
+
++++?image=assets/images/server-side-service-discovery.jpg&size=contain
+
+@title[Server Side Service Discovery]
+
+Note:
+
+- k8s did it for you
+- create a Service Object, the Service will monitor all related pod's IP
+- all related pod's IP is saved in etcd
+- load balancer will read service registry and forward consumer to any one pod
+
 ---?color=dodgerblue
 
 @title[Reasons to use Kubernetes]
