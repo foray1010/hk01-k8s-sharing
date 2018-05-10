@@ -147,16 +147,6 @@ Note:
 - pod
     - explain what is pod
 
-+++?image=assets/images/k8s-node-desc.jpg&size=contain
-
-@title[Kubernetes Node Description]
-
-Note:
-
-- kubelet
-- kube-proxy
-- fluentd
-
 +++
 
 @title[Resource Quotas]
@@ -214,6 +204,27 @@ Note:
 
 @title[Kubernetes Cluster Overview]
 
+---?image=assets/images/k8s-node-architecture.png&size=contain&color=#e4ebf2
+
+@title[Kubernetes Node Architecture Part.2]
+
+Note:
+
+- fluentd
+
++++?image=assets/images/container-logging.jpg&size=contain&color=#e6f7fe
+
+@title[Centralized Logging]
+
++++?image=assets/images/k8s-node-desc.jpg&size=contain
+
+@title[Kubernetes Node Description]
+
+Note:
+
+- kubelet
+- kube-proxy
+
 ---?color=dodgerblue
 
 @title[Reasons to use Kubernetes]
@@ -233,14 +244,11 @@ Note:
 ## References
 
 - <https://kubernetes.io/docs/concepts>
-
 - <https://jimmysong.io/kubernetes-handbook>
-
 - <https://thenewstack.io/kubernetes-an-overview>
-
 - <https://docs.openshift.com/container-platform/3.7/dev_guide/compute_resources.html>
-
 - <http://www.informaticslab.co.uk/technical/infrastructure/2016/03/30/kubernetes-in-pics.html>
+- <https://blog.treasuredata.com/blog/2016/06/14/fluentd-kubernetes-and-google-cloud-platform-a-few-recipes-for-streaming-logging>
 
 ---
 
