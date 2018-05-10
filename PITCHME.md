@@ -74,7 +74,7 @@ Note:
 
 @title[Kubernetes Object]
 
-### Kubernetes Object
+#### Kubernetes Object
 
 ```yaml
 kind: Deployment
@@ -82,9 +82,6 @@ apiVersion: apps/v1
 metadata:
   name: demo-deployment
 spec:
-  selector:
-    matchLabels:
-      app: demo
   replicas: 3
   template:
     metadata:
@@ -95,11 +92,12 @@ spec:
         -
           name: demo
           image: gcr.io/project-id/demo:latest
+  selector:
+    matchLabels:
+      app: demo
 ```
 
-@[1]
-@[15, 18]
-@[9]
+@[1, 6, 12-15]
 
 Note:
 
